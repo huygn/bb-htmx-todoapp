@@ -1,0 +1,14 @@
+{
+  "name": "htmlx-cljs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deno": "deno run -A --unstable --watch index.ts",
+    "dev": "shadow-cljs watch app",
+    "build": "shadow-cljs compile app",
+    "prod": "shadow-cljs release app"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.15.8"
+  }
+}
