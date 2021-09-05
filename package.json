@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "prepare": "husky install",
-    "deno": "deno run -A --unstable --watch index.ts",
+    "deno": "deno run -A --unstable --watch index.js",
+    "clean": "rm -rf dist",
     "dev": "shadow-cljs watch app",
     "build": "shadow-cljs compile app",
-    "release": "rm -rf dist; shadow-cljs release app"
+    "release": "shadow-cljs release app"
   },
   "devDependencies": {
     "husky": "^7.0.2",

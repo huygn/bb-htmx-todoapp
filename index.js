@@ -1,7 +1,7 @@
 import { handler } from "./dist/server.js";
 import { serve } from "./serve.ts";
 
-async function handleRequest(req: Request) {
+async function handleRequest(req) {
   try {
     const { body, status } = await handler(req);
     return new Response(body, {

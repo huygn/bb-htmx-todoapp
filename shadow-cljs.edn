@@ -9,6 +9,6 @@
 
  :builds
  {:app {:target :esm
+        :runtime :custom
         :output-dir "dist"
-        :modules {:server {:exports {handler app/js-handler}}}
-        :compiler-options {:optimizations :advanced}}}}
+        :modules {:server {:exports {handler app/js-handler}}}}}}
