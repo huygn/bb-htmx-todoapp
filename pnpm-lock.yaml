@@ -1,9 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
+  husky: ^7.0.2
   shadow-cljs: 2.15.8
 
 devDependencies:
+  husky: 7.0.2
   shadow-cljs: 2.15.8
 
 packages:
@@ -244,6 +246,12 @@ packages:
 
   /https-browserify/1.0.0:
     resolution: {integrity: sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=}
+    dev: true
+
+  /husky/7.0.2:
+    resolution: {integrity: sha512-8yKEWNX4z2YsofXAMT7KvA1g8p+GxtB1ffV8XtpAEGuXNAbCV5wdNKH+qTpw8SM9fh4aMPDR+yQuKfgnreyZlg==}
+    engines: {node: '>=12'}
+    hasBin: true
     dev: true
 
   /ieee754/1.2.1:

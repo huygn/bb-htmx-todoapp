@@ -7,9 +7,6 @@
   [hiccups "0.3.0"]
   [funcool/promesa "6.0.2"]]
 
- :dev-http
- {3000 "public"}
-
  :builds
  {:app {:target :esm
         :output-dir "dist"

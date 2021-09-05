@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "deno": "deno run -A --unstable --watch index.ts",
     "dev": "shadow-cljs watch app",
     "build": "shadow-cljs compile app",
-    "prod": "shadow-cljs release app"
+    "release": "rm -rf dist; shadow-cljs release app"
   },
   "devDependencies": {
+    "husky": "^7.0.2",
     "shadow-cljs": "2.15.8"
   }
 }
